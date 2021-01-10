@@ -2,6 +2,7 @@
   --SiteBackground: #ffffff;
 
   --Accent: #6aa7e8;
+
   //TEXT
   --TxtColorGrey: #646f79;
   --boxshadow: 0 5px 10px rgba(154, 160, 185, 0.05),
@@ -9,6 +10,12 @@
   --FontS: 16px;
   --FontM: 18px;
   --FontL: 24px;
+}
+.darkmode {
+  --bg: var(--Accent);
+}
+.lightmode {
+  --bg: var(--TxtColorGrey);
 }
 //REMOVE LI BULLET
 ul {

@@ -1,7 +1,10 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import LogoName from "../../static/assets/images/Brand/logo+name-Big-Blue.png"
+import Moon from "../../static/assets/images/svg/moon2.svg"
+import { motion, AnimatePresence } from "framer-motion"
 const NavBar = () => {
+  const [chnagethemeconst, setchangethemeconst] = useState(false)
   const [render, setrender] = useState(true)
   const [renderdropdown, setrenderdropdown] = useState(false)
   const ToggleButtonBurger = () => {
@@ -13,6 +16,11 @@ const NavBar = () => {
   const ToggleButtonDropdown = () => {
     setrenderdropdown(!renderdropdown)
   }
+  const changetheme = () => {
+    setchangethemeconst(!chnagethemeconst)
+    console.log(chnagethemeconst)
+  }
+
   return (
     <nav>
       <div className="centerSection">
@@ -73,7 +81,25 @@ const NavBar = () => {
               <li>
                 <Link to="/">Contact</Link>
               </li>
+              <li>
+                <div className="changetheme" onClick={() => changetheme()}>
+                  <motion.div className="circlechange">
+                    <Moon
+                      fill="white"
+                      style={{ height: "20px", rotate: "40deg" }}
+                    />
+                  </motion.div>
+                </div>
+              </li>
             </ul>
+
+            {!render && (
+              <div className="smallmenulinks">
+                <div className="linksmenu">
+                  <Link to="/"></Link>
+                </div>
+              </div>
+            )}
           </div>
 
           <div
