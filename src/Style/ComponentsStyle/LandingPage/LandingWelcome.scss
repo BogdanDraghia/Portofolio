@@ -1,0 +1,109 @@
+.Wrap {
+  width: 100%;
+}
+.LandingWelcome {
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 4 1;
+}
+.WelcomeLeft {
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.Welcomebuttons {
+  margin: 30px 0px;
+}
+.Welcomebuttons > * {
+  margin: 0px 40px;
+}
+.image {
+  width: 417px;
+  height: 417px;
+}
+.image > img {
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.image > img {
+}
+.IconsProfiles {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.iconhere {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 60px;
+  height: 60px;
+}
+.iconhere > p {
+  color: #707070;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  .image {
+    max-width: 380px;
+    max-height: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .LandingWelcome {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+  .image {
+    max-width: 380px;
+    max-height: 380px;
+  }
+  .Welcomebuttons {
+    display: flex;
+    align-items: center;
+  }
+  .Welcomebuttons > * {
+    margin: 10px 5px !important;
+  }
+  .WelcomeLeft {
+    margin-top: 0px;
+  }
+  .WelcomeText > p {
+    padding: 0 25px 0px 0px;
+  }
+  .button2 {
+    margin: 0px;
+  }
+}
+@media (max-width: 425px) {
+  .IconsProfiles {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .image {
+    max-width: 320px;
+    max-height: 320px;
+  }
+
+  .iconhere > img {
+    width: 45px;
+    height: 45px;
+  }
+}

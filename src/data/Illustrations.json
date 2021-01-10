@@ -1,0 +1,33 @@
+[{   
+    "id": 1,
+    "name": "dog",
+    "type":"illustration",
+    "content":{
+        "desc":"a dog",
+        "date": "November 26, 2018",
+        "pallete":["#6aa7e8","#6aa7e8","#6aa7e8","#6aa7e8"]
+    }
+},
+{   
+    "id": 2,
+    "name": "logo",
+    "type":"logo",
+    "content":{
+        "desc":"a dog",
+        "date": "November 26, 2018",
+        "pallete":["#6aa7e8","#6aa7e8","#6aa7e8","#6aa7e8"]
+    }
+},
+{   
+    "id": 3,
+    "name": "treelandingpage",
+    "type":"landing",
+    "content":{
+        "desc":"tree lading page ",
+        "date": "November 26, 2018",
+        "pallete":["#A8C1A3","#099475","#E29B2B","#645135"]
+    }
+}
+
+
+]
