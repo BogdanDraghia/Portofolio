@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import LogoName from "../../static/assets/images/Brand/logo+name-Big-Blue.png"
 import Moon from "../../static/assets/images/svg/moon2.svg"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 const NavBar = () => {
   const [chnagethemeconst, setchangethemeconst] = useState(false)
   const [render, setrender] = useState(true)
@@ -26,7 +26,7 @@ const NavBar = () => {
       <div className="centerSection">
         <div className="menu display-flex">
           <Link to="/" className="logo">
-            <img src={LogoName} />
+            <img src={LogoName} alt="Logo" />
           </Link>
 
           <div className={`topabsolute ${render === true ? "try2" : "try"}`}>
@@ -37,7 +37,6 @@ const NavBar = () => {
             >
               <li
                 className="hasdropdown"
-                role="button"
                 onKeyDown={() => ToggleButtonDropdown()}
                 onClick={() => ToggleButtonDropdown()}
                 tabIndex={0}
@@ -70,7 +69,7 @@ const NavBar = () => {
                       <Link to="/Illustrations">Illustrations</Link>
                     </li>
                     <li>
-                      <Link to="/">Games and more</Link>
+                      <Link to="/">Interesting things</Link>
                     </li>
                   </ul>
                 )}

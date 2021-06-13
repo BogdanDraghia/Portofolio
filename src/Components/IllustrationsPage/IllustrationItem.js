@@ -12,6 +12,9 @@ const IllustrationItem = props => {
       className="Illustration-image"
       datacustom={props.name}
       onClick={ToggleButtonIllustration}
+      onKeyDown={ToggleButtonIllustration}
+      role="button"
+      tabIndex={-1}
     >
       <div className="moreicons">
         <div className="moreicon-item"></div>

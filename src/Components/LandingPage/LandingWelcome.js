@@ -19,7 +19,7 @@ const LandingWelcome = () => {
         <div className="WelcomeLeft">
           <div className="WelcomeText">
             <p>Hello, I'm Bogdan</p>
-            <h1>Full-stack developer</h1>
+            <h1>Junior full-stack developer</h1>
             <p>
               I want to share the knowledge that I have acquired so far and I am
               willing to learn many new things.

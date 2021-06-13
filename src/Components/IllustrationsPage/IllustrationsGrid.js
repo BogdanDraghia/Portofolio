@@ -2,16 +2,15 @@ import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import IllustrationItem from "../IllustrationsPage/IllustrationItem"
 import IllustrationsOverlay from "../IllustrationsPage/IllustrationsOverlay"
-import ImageComp from "../IllustrationsPage/ImageComp"
 import { motion, AnimatePresence } from "framer-motion"
 import Img from "gatsby-image"
 const IllustrationsGrid = () => {
-  const variants = {
+  /*   const variants = {
     open: { opacity: 1 },
     closed: { opacity: 0 },
-  }
+  } */
   const [overlayIllustration, setoverlayillustration] = useState(false)
-  const [currentoverlay, setcurrentoverlay] = useState([])
+  //const [currentoverlay, setcurrentoverlay] = useState([])
   const [currentoverlaydata, setcurrentoverlaydata] = useState([])
   const data = useStaticQuery(graphql`
     query MyQuery {
@@ -54,7 +53,7 @@ const IllustrationsGrid = () => {
     const test3 = data1
 
     setoverlayillustration(!overlayIllustration)
-    setcurrentoverlay(data1)
+    // setcurrentoverlay(data1)
     const filtercurrentimageoverlay = data.allFile.edges.filter(
       result => result.node.name === test3
     )[0]

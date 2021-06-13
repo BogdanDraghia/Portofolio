@@ -7,7 +7,7 @@ const ProjectItem = () => {
       <div className="Project-Item-Component">
         <div className="ProjectPhoto">
           <div className="ProjectPhoto-Inner">
-            <img src={projecttest} />
+            <img src={projecttest} alt="project" />
           </div>
         </div>
         <div className="ProjectInfo">
@@ -33,7 +33,7 @@ const ProjectItem = () => {
       <div className="Project-Item-Component">
         <div className="ProjectPhoto">
           <div className="ProjectPhoto-Inner">
-            <img src={projecttest} />
+            <img src={projecttest} alt="project" />
           </div>
         </div>
         <div className="ProjectInfo">

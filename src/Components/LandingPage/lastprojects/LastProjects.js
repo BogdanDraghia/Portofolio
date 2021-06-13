@@ -20,7 +20,9 @@ const LastProjects = () => {
           className="project-card"
           style={{ backgroundColor: "#A657AE", color: "white" }}
         >
-          <h2>Games and more</h2>
+          <h2>
+            Interesting things
+          </h2>
         </div>
       </div>
     </div>

@@ -7,13 +7,13 @@ const IllustrationsOverlay = props => {
   const [isOpen, setIsOpen] = useState(true)
   const [copynotification, setcopynotification] = useState(false)
   const buttoncopy = useRef()
-  const variants = {
+  /*   const variants = {
     open: { opacity: 1 },
     closed: { opacity: 0 },
-  }
+  } */
 
   //animation
-  const copymotion = {
+  /*   const copymotion = {
     rest: { opacity: 0, ease: "easeOut", duration: 0.2, type: "tween" },
     onclick: {
       opacity: 1,
@@ -23,17 +23,17 @@ const IllustrationsOverlay = props => {
         ease: "easeIn",
       },
     },
-  }
+  } */
   const closeoverlay = elem => {
     console.log(elem.target)
     if (elem.target.getAttribute("elemclose")) {
       props.handlerexit(false)
     }
   }
-  const over = () => {
+  /*   const over = () => {
     setcopynotification(!copynotification)
     console.log("over")
-  }
+  } */
   const copycolor = elem => {
     navigator.clipboard.writeText(elem)
     console.log("color was copied " + elem)
@@ -64,12 +64,18 @@ const IllustrationsOverlay = props => {
                 style={{ backgroundColor: backgrouddominant }}
                 elemclose="yes"
                 onClick={elem => closeoverlay(elem)}
+                onKeyDown={elem => closeoverlay(elem)}
+                role="button"
+                tabIndex={0}
               >
                 <div className="imagetest">
                   <div
                     className="closeoverlay-exit"
                     elemclose="yes"
                     onClick={elem => closeoverlay(elem)}
+                    onKeyDown={elem => closeoverlay(elem)}
+                    role="button"
+                    tabIndex={0}
                   >
                     <div className="closeoverlaysub">
                       <div className="closeoverlay-line line-rotate1"></div>
